@@ -1,16 +1,37 @@
-import { NavLink, Outlet, Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { NavLink, Outlet, Link, useLocation } from 'react-router-dom'
+
+const LINKS = [
+  { to: "/menu", label: "Menu" },
+  { to: "/culture", label: "Culture" },
+  { to: "/about", label: "About Donna" },
+]
 
 export default function Layout() {
+  const [open, setOpen] = useState(false)
+  const loc = useLocation()
+  useEffect(() => { setOpen(false) }, [loc.pathname])
+
   return (
     <>
       <header className="site-nav">
         <div className="nav-inner">
           <Link to="/" className="logo">BRED <span className="amp">&amp;</span> BUTTA</Link>
-          <nav>
+
+          <button
+            className={"burger" + (open ? " open" : "")}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            onClick={() => setOpen(o => !o)}
+          >
+            <span /><span /><span />
+          </button>
+
+          <nav className={open ? "open" : ""}>
             <ul>
-              <li><NavLink to="/menu">Menu</NavLink></li>
-              <li><NavLink to="/culture">Culture</NavLink></li>
-              <li><NavLink to="/about">About Donna</NavLink></li>
+              {LINKS.map(l => (
+                <li key={l.to}><NavLink to={l.to}>{l.label}</NavLink></li>
+              ))}
               <li><NavLink to="/order" className="order-btn">Order this week</NavLink></li>
             </ul>
           </nav>
