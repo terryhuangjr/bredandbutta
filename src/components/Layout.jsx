@@ -46,7 +46,7 @@ export default function Layout() {
         <div className="container">
           <div className="cols">
             <div>
-              <img src="/assets/logo-cream.png" alt="Bred & Butta" className="footer-logo" />
+              <img src="/assets/logo-bone.png" alt="Bred & Butta" className="footer-logo" />
               <p>Small-batch sourdough and hand-churned cultured butter, baked by Donna in a home kitchen and delivered by Terry. Friends first, loaves second.</p>
             </div>
             <div>

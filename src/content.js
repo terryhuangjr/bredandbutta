@@ -6,7 +6,7 @@ export const WEEK = {
   date: "Saturday, October 17",
   closes: "Thursday 8pm, or when sold out",
   loavesTotal: 10,
-  loavesLeft: 7,
+  loavesLeft: 8,
 };
 
 // category: "bread" | "butter" — Menu groups on this.
@@ -50,10 +50,21 @@ export const PRODUCTS = [
     name: "Italian Rainbow with Chocolate Chips",
     price: 10,
     stock: 0,
-    stockTotal: 2,
+    stockTotal: 1,
     tag: "The kids' one",
-    desc: "Donna's birthday-loaf crossover: soft enriched sourdough in rainbow layers, studded with chocolate chips. Sienna and Genevieve approved by committee vote.",
+    desc: "Donna's birthday-loaf crossover: soft enriched sourdough in rainbow layers, studded with chocolate chips. Sienna and Genevieve approved by committee vote. Pair it with the raspberry butter — trust us.",
     img: "", // IMG: rainbow loaf — needs a real slice shot, no stock will do this justice
+  },
+  {
+    id: "dark-chocolate-chip",
+    category: "bread",
+    name: "Dark Chocolate Chip Sourdough",
+    price: 11,
+    stock: 1,
+    stockTotal: 1,
+    tag: "Grown-up sweet",
+    desc: "The sweet loaf for people who say they don't do sweet. Bittersweet dark chocolate through an enriched slow-fermented dough. Toasted, with the brown sugar espresso butter on top — it's dessert for breakfast and we won't hear otherwise.",
+    img: "", // IMG: dark chocolate loaf — Donna's bake-day shot when ready
   },
   {
     id: "maple-miso-butter",
@@ -85,7 +96,18 @@ export const PRODUCTS = [
     stock: 2,
     stockTotal: 2,
     tag: "Small batch",
-    desc: "Espresso from the local roaster and dark brown sugar into cultured butter. Dessert for breakfast. We don't make the rules.",
+    desc: "Espresso from the local roaster and dark brown sugar into cultured butter. The dark chocolate chip loaf's soulmate. Dessert for breakfast — we don't make the rules.",
+    img: "", // IMG: butter board
+  },
+  {
+    id: "raspberry-butter",
+    category: "butter",
+    name: "Raspberry Butter",
+    price: 9,
+    stock: 2,
+    stockTotal: 2,
+    tag: "New",
+    desc: "Real raspberries whipped into cultured butter — tart, bright, and pointedly not too sweet. The rainbow loaf's assigned partner, per this site's own taste test.",
     img: "", // IMG: butter board
   },
 ];
