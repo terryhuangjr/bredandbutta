@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FACTS, TIMELINE, FAQ } from '../content'
+import { FACTS, TIMELINE, FAQ, SCIENCE_NOTE } from '../content'
 
 const HERO = "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1400&q=80" // verified
 
@@ -29,6 +29,8 @@ export default function Culture() {
             </div>
           ))}
         </div>
+
+        <p className="science-note">{SCIENCE_NOTE}</p>
 
         <div className="kicker" style={{ marginTop: 56 }}>The three-day build</div>
         <h2 className="title">What actually happens to a loaf</h2>

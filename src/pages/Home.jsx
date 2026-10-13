@@ -56,7 +56,7 @@ export default function Home() {
         <div className="kicker">This week's board</div>
         <h2 className="title">What's in the oven</h2>
         <div className="grid-2">
-          {PRODUCTS.slice(0, 2).map(p => (
+          {PRODUCTS.filter(p => p.img).slice(0, 2).map(p => (
             <div className="product" key={p.id}>
               <img src={p.img} alt={p.name} />
               <div className="body">
@@ -74,7 +74,7 @@ export default function Home() {
         <div className="kicker">Why it matters</div>
         <h2 className="title">Real fermentation isn't a trend</h2>
         <div className="fact-row">
-          {FACTS.map(f => (
+          {FACTS.slice(0, 3).map(f => (
             <div className="fact" key={f.h}>
               <h3>{f.h}</h3>
               <p>{f.p}</p>
