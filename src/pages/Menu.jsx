@@ -33,21 +33,21 @@ export default function Menu() {
 
         <div className="menu-group">
           <h3 className="group-title">Bread</h3>
-          <div className="grid-2">
+          <div className="grid-3">
             {breads.map(p => <ProductCard p={p} key={p.id} />)}
           </div>
         </div>
 
         <div className="menu-group">
           <h3 className="group-title">Cultured butters · 4 oz</h3>
-          <div className="grid-2">
+          <div className="grid-3">
             {butters.map(p => <ProductCard p={p} key={p.id} />)}
           </div>
         </div>
 
         <div className="menu-group">
           <h3 className="group-title">Bundles</h3>
-          <div className="grid-2">
+          <div className="grid-3">
             {bundles.map(p => <ProductCard p={p} key={p.id} />)}
           </div>
         </div>
