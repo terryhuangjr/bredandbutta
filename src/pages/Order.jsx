@@ -13,6 +13,12 @@ export default function Order() {
   const delivery = subtotal > 0 ? 0 : 0 // local delivery, free for now
   const count = items.reduce((s, p) => s + cart[p.id], 0)
 
+  // the butter upsell: bread in basket, no butter yet
+  const hasBread = items.some(p => p.category === "bread")
+  const hasButter = items.some(p => p.category === "butter" || p.category === "bundle")
+  const suggestButter = hasBread && !hasButter
+  const topButter = PRODUCTS.find(p => p.category === "butter" && p.stock > 0)
+
   if (placed) {
     return (
       <div className="container">
@@ -53,7 +59,7 @@ export default function Order() {
             {PRODUCTS.map(p => (
               <div className="order-item" key={p.id}>
                 <div className="info">
-                  <h3>{p.name} <span style={{ fontWeight: 400, fontSize: 15, color: 'var(--crust)' }}>${p.price}</span></h3>
+                  <h3>{p.name} <span style={{ fontWeight: 400, fontSize: 15, color: 'var(--stone)' }}>${p.price}</span></h3>
                   <div className="desc">{p.desc}</div>
                   <div className={"stock" + (p.stock <= 3 && p.stock > 0 ? " low" : "")}>
                     {p.stock > 0 ? `${p.stock} of ${p.stockTotal} left in this bake` : "Sold out this week — back next bake"}
@@ -76,6 +82,14 @@ export default function Order() {
                 <span>{cart[p.id]} × {p.name}</span><span>${(p.price * cart[p.id]).toFixed(2)}</span>
               </div>
             ))}
+            {suggestButter && topButter && (
+              <div className="upsell">
+                <div className="upsell-text">Bread without cultured butter is a missed opportunity.</div>
+                <button className="upsell-btn" onClick={() => setQty(topButter.id, (cart[topButter.id] || 0) + 1, topButter.stock)}>
+                  + Add {topButter.name} · ${topButter.price}
+                </button>
+              </div>
+            )}
             <div className="row"><span>Local delivery (Sat)</span><span>{subtotal ? "Free" : "—"}</span></div>
             <div className="row total"><span>Total</span><span>${subtotal.toFixed(2)}</span></div>
             <button className="btn btn-primary" disabled={count === 0} onClick={() => setPlaced(true)}>

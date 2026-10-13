@@ -19,6 +19,7 @@ function ProductCard({ p }) {
 export default function Menu() {
   const breads = PRODUCTS.filter(p => p.category === "bread")
   const butters = PRODUCTS.filter(p => p.category === "butter")
+  const bundles = PRODUCTS.filter(p => p.category === "bundle")
   return (
     <div className="container">
       <section className="block">
@@ -38,9 +39,16 @@ export default function Menu() {
         </div>
 
         <div className="menu-group">
-          <h3 className="group-title">Cultured butters</h3>
+          <h3 className="group-title">Cultured butters · 4 oz</h3>
           <div className="grid-2">
             {butters.map(p => <ProductCard p={p} key={p.id} />)}
+          </div>
+        </div>
+
+        <div className="menu-group">
+          <h3 className="group-title">Bundles</h3>
+          <div className="grid-2">
+            {bundles.map(p => <ProductCard p={p} key={p.id} />)}
           </div>
         </div>
 
