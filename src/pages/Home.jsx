@@ -8,6 +8,7 @@ export default function Home() {
     <div className="container">
       <section className="hero">
         <div>
+          <img src="/assets/logo-crust.png" alt="Bred & Butta logo" className="hero-logo" />
           <h1>Bread that takes <em>three days</em>, so your Saturday takes zero effort.</h1>
           <p className="lede">
             Donna bakes 8–10 loaves a week of slow-fermented sourdough and hand-churns
