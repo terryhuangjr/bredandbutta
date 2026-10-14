@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
 
 /* Stone & Bone — modern/bold with rustic grain */
+/* 2026-10-14: text tones warmed to mocha per Donna ("wording a little browner, mocha") */
 :root {
   --paper: #f7f5f0;
   --paper-2: #ffffff;
-  --ink: #423b31;
-  --stone: #5c564c;
-  --stone-soft: #8f8a80;
+  --ink: #4a3f33;
+  --stone: #6b5a47;
+  --stone-soft: #9a8a76;
   --bone: #c8c5b5;
   --bone-soft: #e8e5da;
   --line: #e6e2d8;
-  --charcoal: #463f35;
+  --charcoal: #4a4034;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }

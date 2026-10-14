@@ -59,8 +59,8 @@ export default function Layout() {
             <div>
               <h4>Get in touch</h4>
               <p>hello@bredandbutta.store</p>
-              <p>Bakes Fridays · Delivers Saturdays</p>
-              <p>Order cutoff: Thursday 8pm</p>
+              <p>Preps Thursdays · Bakes &amp; delivers Friday</p>
+              <p>Order cutoff: Wednesday 8pm</p>
             </div>
           </div>
           <div className="fine">

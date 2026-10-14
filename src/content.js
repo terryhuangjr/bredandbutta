@@ -3,8 +3,8 @@
 
 export const WEEK = {
   label: "This week's bake",
-  date: "Saturday, October 17",
-  closes: "Thursday 8pm, or when sold out",
+  date: "Friday, October 16",
+  closes: "Wednesday 8pm, or when sold out",
   loavesTotal: 10,
   loavesLeft: 8,
 };
@@ -124,9 +124,9 @@ export const PRODUCTS = [
 ];
 
 export const STEPS = [
-  { n: "01", h: "Order by Thursday", p: "Weekly bake, limited loaves. When they're gone, they're gone — that's the freshness guarantee." },
+  { n: "01", h: "Order by Wednesday", p: "Weekly bake, limited loaves. When they're gone, they're gone — that's the freshness guarantee." },
   { n: "02", h: "Donna bakes Friday", p: "Every loaf is mixed, folded, and shaped by hand over three days. Breadie Smalls does the rising." },
-  { n: "03", h: "Delivered Saturday", p: "Warm-ish, paper-wrapped, at your door. Right now that's Terry's car and a cooler — friends first." },
+  { n: "03", h: "Delivered Friday", p: "Out of the oven in the morning, at your door that afternoon. Same-day fresh, paper-wrapped, still warm-ish." },
 ];
 
 export const FACTS = [
@@ -170,11 +170,11 @@ export const TIMELINE = [
 
 export const FAQ = [
   { q: "Who is Breadie Smalls?", a: "Donna's sourdough starter — a jar of flour and water alive with wild yeast and lactic acid bacteria. It's fed regularly, lives on the counter, and every loaf she bakes is partly made of it. Yes, it has a name. Yes, it's family." },
-  { q: "How does delivery work?", a: "We bake Friday and deliver locally on Saturday. Right now that's Donna and Terry, by car, friends-first pricing: delivery is free nearby, small flat fee further out. Order by Thursday night." },
+  { q: "How does delivery work?", a: "Donna preps Thursday, bakes Friday morning, and Terry delivers Friday afternoon — so your loaf is baked the same day it arrives. Right now that's Donna and Terry, by car, friends-first pricing: delivery is free nearby, small flat fee further out. Order by Wednesday night." },
   { q: "How do I keep sourdough fresh?", a: "Never the fridge. Keep it cut-side-down on a board or in a linen bag for 3-4 days, then slice and freeze in a bag — toast straight from frozen and it's indistinguishable. Real sourdough stales slower than commercial bread because of the acids." },
   { q: "Why does it sell out so fast?", a: "It's a home oven and a human being with two kids and a full life. 8-10 loaves a week is one baker's honest limit, and every loaf is shaped by hand. Scarcity isn't marketing; it's geometry." },
   { q: "Is your bread gluten-free?", a: "No — it's wheat. But the 36-48 hour ferment breaks down a good deal of the gluten and the FODMAPs people actually react to, and studies back that up. Many folks who avoid supermarket bread find they're fine with this. Still: not safe for celiac, and we bake in a kitchen that handles wheat." },
   { q: "What's in the butters?", a: "Cream, cultured for 24 hours like the bread gets fermented, then churned by hand. From there it's the flavor team: maple + miso, sesame + honey, brown sugar + espresso, or raspberry. 4 oz jars. No gums, no 'natural flavors.'" },
-  { q: "Can I get a loaf every week without remembering to order?", a: "That's the Bread Club — coming soon. One weekly payment, one loaf (plus butter option) every Saturday until you pause it." },
+  { q: "Can I get a loaf every week without remembering to order?", a: "That's the Bread Club — coming soon. One weekly payment, one loaf (plus butter option) every Friday until you pause it." },
   { q: "Can I request a flavor?", a: "The menu rotates as Donna tests new bakes, and requests move it. Gochujang was a request. Ask in your order note — worst case she says 'not this week.'" },
 ];

@@ -27,7 +27,7 @@ export default function Order() {
           <p className="sub" style={{ margin: '0 auto' }}>
             This is the demo checkout — no payment taken yet. When Stripe goes live, this
             becomes a real checkout and Donna gets a ping. For now: screenshot this and
-            text it to Donna, she'll confirm by Saturday.
+            text it to Donna, she'll confirm by Thursday.
           </p>
           <div style={{ maxWidth: 420, margin: '28px auto 0', textAlign: 'left' }}>
             {items.map(p => (
@@ -49,9 +49,10 @@ export default function Order() {
     <div className="container">
       <section className="block">
         <div className="kicker">{WEEK.label}</div>
-        <h2 className="title">Build your Saturday</h2>
+        <h2 className="title">Build your Friday basket</h2>
         <p className="sub">
-          Closes {WEEK.closes}. Everything bakes Friday and gets delivered Saturday.
+          Closes {WEEK.closes}. Everything bakes Friday morning and lands on your doorstep
+          Friday afternoon — same-day fresh.
         </p>
 
         <div className="order-grid">
@@ -90,7 +91,7 @@ export default function Order() {
                 </button>
               </div>
             )}
-            <div className="row"><span>Local delivery (Sat)</span><span>{subtotal ? "Free" : "—"}</span></div>
+            <div className="row"><span>Local delivery (Fri PM)</span><span>{subtotal ? "Free" : "—"}</span></div>
             <div className="row total"><span>Total</span><span>${subtotal.toFixed(2)}</span></div>
             <button className="btn btn-primary" disabled={count === 0} onClick={() => setPlaced(true)}>
               {count === 0 ? "Add a loaf first" : `Place order · ${count} item${count > 1 ? "s" : ""}`}

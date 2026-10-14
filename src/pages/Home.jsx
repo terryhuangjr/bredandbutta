@@ -9,7 +9,7 @@ export default function Home() {
       <section className="hero">
         <div>
           <img src="/assets/logo-stone.png" alt="Bred & Butta logo" className="hero-logo" />
-          <h1>Bread that takes <em>three days</em>, so your Saturday takes zero effort.</h1>
+          <h1>Bread that takes <em>three days</em>, so Friday dinner takes zero effort.</h1>
           <p className="lede">
             Donna bakes 8–10 loaves a week of slow-fermented sourdough and hand-churns
             cultured butter in the same batch-sized obsession. When the week's bake sells
@@ -29,7 +29,7 @@ export default function Home() {
         <div>
           <h3>{WEEK.label}</h3>
           <p className="meta">
-            Bake day: {WEEK.date} · Closes {WEEK.closes} · Local delivery Saturday
+            Bake day: {WEEK.date} · Closes {WEEK.closes} · Delivered Friday afternoon, same-day fresh
           </p>
         </div>
         <div className="loaves-left">
