@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import breadieImg from '../assets/breadie-smalls.jpg'
+import breddieImg from '../assets/breddie-smalls.jpg'
 
 // SWAP: Donna's real portrait — the kitchen, the starter jar somewhere in frame.
 const BAKER_IMG = "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=900&q=80"
@@ -28,7 +28,7 @@ export default function About() {
               never stops.
             </p>
             <p>
-              The starter has a name: <strong>Bready Smalls</strong>. She feeds it, it
+              The starter has a name: <strong>Breddie Smalls</strong>. She feeds it, it
               rises, and every loaf and every churn of butter carries a living piece of
               it. Scroll down — he has his own page section now, and he earned it.
             </p>
@@ -51,12 +51,12 @@ export default function About() {
 
       <section className="block">
         <div className="kicker">About — the starter</div>
-        <h2 className="title">Bready Smalls</h2>
+        <h2 className="title">Breddie Smalls</h2>
 
         <div className="about-grid about-grid--flip">
           <div>
             <p>
-              Introducing <strong>Bready Smalls</strong>. Straight outta the flour bin,
+              Introducing <strong>Breddie Smalls</strong>. Straight outta the flour bin,
               born and bread in New York.
             </p>
             <p>
@@ -73,7 +73,7 @@ export default function About() {
               every churn on this site. Feed him, and he feeds you.
             </p>
           </div>
-          <img className="about-portrait" src={breadieImg} alt="Bready Smalls, the sourdough starter, in full mogul" />
+          <img className="about-portrait" src={breddieImg} alt="Breddie Smalls, the sourdough starter, in full mogul" />
         </div>
       </section>
     </div>

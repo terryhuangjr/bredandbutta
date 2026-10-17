@@ -125,7 +125,7 @@ export const PRODUCTS = [
 
 export const STEPS = [
   { n: "01", h: "Order by Wednesday", p: "Weekly bake, limited loaves. When they're gone, they're gone — that's the freshness guarantee." },
-  { n: "02", h: "Donna bakes Friday", p: "Every loaf is mixed, folded, and shaped by hand over three days. Bready Smalls does the rising." },
+  { n: "02", h: "Donna bakes Friday", p: "Every loaf is mixed, folded, and shaped by hand over three days. Breddie Smalls does the rising." },
   { n: "03", h: "Delivered Friday", p: "Out of the oven in the morning, at your door that afternoon. Same-day fresh, paper-wrapped, still warm-ish." },
 ];
 
@@ -161,15 +161,15 @@ export const SCIENCE_NOTE =
   "Sources, in plain words: a 2010 Journal of Cereal Science trial (lower glucose and insulin responses to sourdough wholemeal); a British Journal of Nutrition study (sourdough GI ≈ 54 vs ≈ 72 for yeast white bread); a Journal of Agricultural and Food Chemistry study (−62% phytate with sourdough vs −38% with yeast, better magnesium solubility); and a 2023 Frontiers in Nutrition systematic review of 25 clinical trials. The honest caveat from that review: results vary with flour, strain, and method — sourdough is promising and traditional, not medicine. If wheat bothers you, talk to your doctor. What no study disputes: three days of fermentation beats three hours of additives.";
 
 export const TIMELINE = [
-  { t: "Day 1, morning", p: "Levain built from Bready Smalls — Donna's starter, a living culture of wild yeast and lactic acid bacteria, fed flour and water like a very patient pet." },
+  { t: "Day 1, morning", p: "Levain built from Breddie Smalls — Donna's starter, a living culture of wild yeast and lactic acid bacteria, fed flour and water like a very patient pet." },
   { t: "Day 1, evening", p: "Autolyse: flour and water rest together so gluten forms gently. Then salt in, and a series of slow folds through the night." },
-  { t: "Day 2, all day", p: "Bulk fermentation in a warm room. Bready Smalls does the rising and the flavor-building. This is the part nobody can rush." },
+  { t: "Day 2, all day", p: "Bulk fermentation in a warm room. Breddie Smalls does the rising and the flavor-building. This is the part nobody can rush." },
   { t: "Day 2, night", p: "Shaped by hand into baskets, then cold retard in the fridge overnight — the slow, cold ferment that builds the tang and the blisters." },
   { t: "Day 3, bake day", p: "Into a screaming-hot oven with steam. Out comes a loaf that sings as it cools. Delivered the same day." },
 ];
 
 export const FAQ = [
-  { q: "Who is Bready Smalls?", a: "Donna's sourdough starter — a jar of flour and water alive with wild yeast and lactic acid bacteria. It's fed regularly, lives on the counter, and every loaf she bakes is partly made of it. Yes, it has a name. Yes, it's family." },
+  { q: "Who is Breddie Smalls?", a: "Donna's sourdough starter — a jar of flour and water alive with wild yeast and lactic acid bacteria. It's fed regularly, lives on the counter, and every loaf she bakes is partly made of it. Yes, it has a name. Yes, it's family." },
   { q: "How does delivery work?", a: "Donna preps Thursday, bakes Friday morning, and Terry delivers Friday afternoon — so your loaf is baked the same day it arrives. Right now that's Donna and Terry, by car, friends-first pricing: delivery is free nearby, small flat fee further out. Order by Wednesday night." },
   { q: "How do I keep sourdough fresh?", a: "Never the fridge. Keep it cut-side-down on a board or in a linen bag for 3-4 days, then slice and freeze in a bag — toast straight from frozen and it's indistinguishable. Real sourdough stales slower than commercial bread because of the acids." },
   { q: "Why does it sell out so fast?", a: "It's a home oven and a human being with two kids and a full life. 8-10 loaves a week is one baker's honest limit, and every loaf is shaped by hand. Scarcity isn't marketing; it's geometry." },
