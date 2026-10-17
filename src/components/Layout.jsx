@@ -4,7 +4,7 @@ import { NavLink, Outlet, Link, useLocation } from 'react-router-dom'
 const LINKS = [
   { to: "/menu", label: "Menu" },
   { to: "/culture", label: "Culture" },
-  { to: "/about", label: "About Donna" },
+  { to: "/about", label: "About" },
 ]
 
 export default function Layout() {
@@ -54,7 +54,7 @@ export default function Layout() {
               <Link to="/menu">Menu</Link>
               <Link to="/order">Order</Link>
               <Link to="/culture">Culture</Link>
-              <Link to="/about">About Donna</Link>
+              <Link to="/about">About</Link>
             </div>
             <div>
               <h4>Get in touch</h4>

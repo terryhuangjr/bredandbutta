@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import breadieImg from '../assets/breadie-smalls.jpg'
 
 // SWAP: Donna's real portrait — the kitchen, the starter jar somewhere in frame.
 const BAKER_IMG = "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=900&q=80"
@@ -7,7 +8,7 @@ export default function About() {
   return (
     <div className="container">
       <section className="block">
-        <div className="kicker">About the baker</div>
+        <div className="kicker">About — the baker</div>
         <h2 className="title">Donna</h2>
 
         <div className="about-grid">
@@ -27,10 +28,9 @@ export default function About() {
               never stops.
             </p>
             <p>
-              The starter has a name: <strong>Breadie Smalls</strong>. She feeds it, it
-              rises, and every loaf and every churn of butter carries a living piece of it.
-              Growing beautiful bread from a jar nobody would look at twice — Donna finds
-              that genuinely incredible, even now.
+              The starter has a name: <strong>Bready Smalls</strong>. She feeds it, it
+              rises, and every loaf and every churn of butter carries a living piece of
+              it. Scroll down — he has his own page section now, and he earned it.
             </p>
             <div className="pullquote">
               "Simple ingredients. Slow time. Something alive doing the work. I just want
@@ -46,6 +46,34 @@ export default function About() {
               <Link to="/order" className="btn btn-primary">Taste what she means</Link>
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="block">
+        <div className="kicker">About — the starter</div>
+        <h2 className="title">Bready Smalls</h2>
+
+        <div className="about-grid about-grid--flip">
+          <div>
+            <p>
+              Introducing <strong>Bready Smalls</strong>. Straight outta the flour bin,
+              born and bread in New York.
+            </p>
+            <p>
+              Started from a little discard, now he's rising to the top. Fed daily,
+              always bubbling, and known for making some seriously notorious dough.
+            </p>
+            <div className="pullquote">"Mo' starter, mo' problems."</div>
+            <p>
+              He likes his hydration high, his fermentation slow, and his loaves BIG.
+              It was all a dream… until the dough doubled in size.
+            </p>
+            <p>
+              The Notorious B.R.E.A.D. 👑 is the living culture behind every loaf and
+              every churn on this site. Feed him, and he feeds you.
+            </p>
+          </div>
+          <img className="about-portrait" src={breadieImg} alt="Bready Smalls, the sourdough starter, in full mogul" />
         </div>
       </section>
     </div>
