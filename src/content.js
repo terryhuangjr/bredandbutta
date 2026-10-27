@@ -1,5 +1,6 @@
 // Central content + demo data. When real photos exist, swap img URLs here.
 // Stock placeholders via Unsplash source URLs (hotlinked for demo only).
+import gochujangCheddarImg from './assets/gochujang-cheddar.jpg' // real photo, Tracy 2026-10-26
 
 export const WEEK = {
   label: "This week's bake",
@@ -42,7 +43,7 @@ export const PRODUCTS = [
     stockTotal: 2,
     tag: "Donna's signature",
     desc: "Roasted garlic and gochujang — fermented Korean chili paste — rubbed through the dough before the fold, with cheddar for structure. Savory, spicy, faintly sweet, deeply stupid-good on a cold morning.",
-    img: "", // IMG: gochujang loaf — the red-flecked crumb deserves a real photo
+    img: gochujangCheddarImg, // real photo from Tracy (customer cousin), 2026-10-26
   },
   {
     id: "rainbow-chocolate",

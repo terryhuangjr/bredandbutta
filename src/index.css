@@ -2,15 +2,17 @@
 
 /* Stone & Bone — modern/bold with rustic grain */
 /* 2026-10-14: text tones warmed to mocha per Donna ("wording a little browner, mocha") */
+/* 2026-10-27: page background -> warm crème brûlée cream per Terry; nav keeps the muted grey paper tone */
 :root {
-  --paper: #f7f5f0;
+  --paper: #f8f1e2;        /* crème brûlée cream — page background */
   --paper-2: #ffffff;
+  --nav-paper: rgba(247, 245, 240, 0.9); /* muted grey — nav stays */
   --ink: #4a3f33;
   --stone: #6b5a47;
   --stone-soft: #9a8a76;
   --bone: #c8c5b5;
   --bone-soft: #e8e5da;
-  --line: #e6e2d8;
+  --line: #eae3d2;
   --charcoal: #4a4034;
 }
 
@@ -46,7 +48,7 @@ img { max-width: 100%; display: block; }
 /* ---------- nav ---------- */
 header.site-nav {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(247, 245, 240, 0.9);
+  background: var(--nav-paper);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
