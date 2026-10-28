@@ -9,7 +9,7 @@ export default function Home() {
       <section className="hero">
         <div>
           <img src="/assets/logo-stone.png" alt="Bred & Butta logo" className="hero-logo" />
-          <h1>Bread that takes <em>three days</em>, so Friday dinner takes zero effort.</h1>
+          <h1>Slow bread. Small batch. <em>Gone by Sunday.</em></h1>
           <p className="lede">
             Donna bakes 8–10 loaves a week of slow-fermented sourdough and hand-churns
             cultured butter in the same batch-sized obsession. When the week's bake sells
