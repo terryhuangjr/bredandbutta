@@ -171,7 +171,7 @@ p.sub { color: var(--stone); max-width: 58ch; }
 .about-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 44px; align-items: start; margin-top: 24px; }
 .about-grid--flip { grid-template-columns: 1.15fr 0.85fr; }
 .about-grid img { border-radius: 4px; width: 100%; height: 460px; object-fit: cover; }
-.about-grid img.about-portrait { height: auto; aspect-ratio: 576 / 633; }
+.about-grid img.about-portrait { height: auto; aspect-ratio: 576 / 612; }
 .about-grid p { margin-bottom: 16px; color: var(--stone); }
 .pullquote {
   font-family: 'Fraunces', serif; font-size: 26px; font-weight: 300; font-style: italic; line-height: 1.35;
