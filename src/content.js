@@ -1,6 +1,8 @@
 // Central content + demo data. When real photos exist, swap img URLs here.
 // Stock placeholders via Unsplash source URLs (hotlinked for demo only).
 import gochujangCheddarImg from './assets/gochujang-cheddar.jpg' // real photo, Tracy 2026-10-26
+import sourdoughLoafImg from './assets/sourdough-loaf.jpg' // real photo, Donna's bake (Terry via Telegram 2026-10-29)
+import sourdoughCrumbImg from './assets/sourdough-crumb.jpg' // real photo, crumb shot (Terry via Telegram 2026-10-29)
 
 export const WEEK = {
   label: "This week's bake",
@@ -21,7 +23,7 @@ export const PRODUCTS = [
     stockTotal: 4,
     tag: "The classic",
     desc: "Flour, water, salt, time. A 48-hour cold ferment, blistered crust, custardy crumb, that gentle tang. The loaf that started it all.",
-    img: "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?w=900&q=80", // verified: rustic loaf
+    img: sourdoughLoafImg, // real photo, Donna's bake 2026-10-29 (was Unsplash stock)
   },
   {
     id: "cheddar",

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { WEEK, STEPS, FACTS, PRODUCTS } from '../content'
+import sourdoughCrumbImg from '../assets/sourdough-crumb.jpg'
 
-const HERO_IMG = "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1400&q=80"
+const HERO_IMG = sourdoughCrumbImg // real crumb shot, Donna's bake 2026-10-29 (was Unsplash stock)
 
 export default function Home() {
   return (
